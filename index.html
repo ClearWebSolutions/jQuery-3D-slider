@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>jQuery 3DSlider Demo by ClearWebSolutions</title>
+<script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script language="javascript" src="js/3dslider.js"></script>
+<script language="javascript">
+/* 3DSlider initialization ***********************************/
+$(document).ready(function(){
+	$("#slideshow").dddSlider();
+	//usage with custom options. All the below options provided are default
+	//$("#slideshow").dddSlider({slideWidth: 500, autoplay: true, speed: 800, speedBtwnSlides: 4500, playLbl: "Play", pauseLbl: "Pause", incP: 60});
+});
+</script>
+<style type="text/css">
+/* 3DSlider CSS ******************************************/
+body{
+	background-color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#slideshow{
+	position: relative;
+	margin:0 auto;
+	width:760px;
+	height:360px;
+	top:100px;
+}
+#slideshow .slide{
+	position: absolute;
+}
+#slideshow .slide img{
+	width:100%;
+}
+#slideshow .control{
+	position: absolute;
+	display: block;
+	z-index: 10000;
+	cursor: pointer;
+}
+#slideshow #pause{
+	position: absolute;
+	bottom:0px;
+	right:-40px;
+	cursor: pointer;
+	color:#ffffff;
+}
+#slideshow #play{
+	position: absolute;
+	bottom:0px;
+	right:-40px;
+	cursor: pointer;
+	color:#ffffff;
+}
+</style>
+</head>
+<body>
+
+
+<div id="slideshow">
+	<div class="slide"><img src="imgs/1.png" border="0"/></div>
+	<div class="slide"><img src="imgs/2.png" border="0"/></div>
+	<div class="slide"><img src="imgs/3.png" border="0"/></div>
+	<div class="slide"><img src="imgs/4.png" border="0"/></div>
+	<div class="slide"><img src="imgs/5.png" border="0"/></div>
+	<div class="slide"><img src="imgs/6.png" border="0"/></div>
+	<div class="slide"><img src="imgs/7.png" border="0"/></div>
+</div>
+
+
+</body>
+</html>
